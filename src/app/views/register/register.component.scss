@@ -1,0 +1,53 @@
+body{
+    background-color: #EDE6E6;
+}
+#title-container {
+    display: flex;
+    justify-content: center;
+}
+
+#title-container h1 {
+    width: 183px;
+    height: 41px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Arimo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#register-form-container {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#register-form-container .register-form-element {
+    align-items: center;
+
+}
+
+.register-form-element {
+    margin-bottom: 5px;
+}
+#image-container {
+    display:flex;
+    justify-content: center;
+   align-items: center;
+    width: 350px;
+    height: 250px;
+    margin:0 auto;
+}
+
+img {
+    width: 350px;
+    height: 370px;
+    object-fit: cover;
+}
+
+#button-container {
+    margin-top: 30px;
+}

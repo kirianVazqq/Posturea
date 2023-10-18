@@ -1,0 +1,21 @@
+<div id="title-container"><h1>Registrate</h1></div>
+<div id="image-container">
+  <img src="../../assets/img/posturea-no-text.png" />
+</div>
+<div id="register-form-container">
+  <div class="register-form-element">
+    <app-form-field [labelText]="'Nombre'"></app-form-field>
+  </div>
+  <div class="register-form-element">
+    <app-form-field [labelText]="'Apellidos'"></app-form-field>
+  </div>
+  <div class="register-form-element">
+    <app-form-field [labelText]="'Correo'"></app-form-field>
+  </div>
+  <div class="register-form-element">
+    <app-form-field [labelText]="'Cotraseña'"></app-form-field>
+  </div>
+</div>
+<div id="button-container">
+  <app-button [buttonText]="'Crear cuenta'"  routerLink="/feed-page"></app-button>
+</div>

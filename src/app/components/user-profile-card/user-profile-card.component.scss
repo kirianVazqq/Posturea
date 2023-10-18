@@ -1,0 +1,66 @@
+#user-profile-card-container span{
+    font-weight: bold;
+}
+#user-image-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 130px;
+    height: 100px;
+    border-radius: 100px;
+    border-style: solid;
+background-color:#D9D9D9;
+}
+
+#user-image-container img {
+    object-fit: cover;
+    width: 130px;
+    height: 100px;
+    border-radius: 100px;
+}
+#user-image-container a img {
+    width: 32.731px;
+    height: 31px;
+    margin-left:180px;
+}
+#user-tittle{
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+}
+#user-profile-info{
+    display: flex;
+}
+#user-info-container{
+    margin-left: 10px;
+    display: flex;
+}
+#user-publications-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#user-following-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#user-followers-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#user-images-container{
+    margin-bottom: 70px;
+}
+#user-images-container img{
+    width: 120px;
+    height: 120px;  
+    object-fit: cover;
+}
