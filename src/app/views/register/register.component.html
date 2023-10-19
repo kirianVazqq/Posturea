@@ -2,20 +2,32 @@
 <div id="image-container">
   <img src="../../assets/img/posturea-no-text.png" />
 </div>
-<div id="register-form-container">
-  <div class="register-form-element">
-    <app-form-field [labelText]="'Nombre'"></app-form-field>
-  </div>
-  <div class="register-form-element">
-    <app-form-field [labelText]="'Apellidos'"></app-form-field>
-  </div>
-  <div class="register-form-element">
-    <app-form-field [labelText]="'Correo'"></app-form-field>
-  </div>
-  <div class="register-form-element">
-    <app-form-field [labelText]="'Cotraseña'"></app-form-field>
-  </div>
-</div>
-<div id="button-container">
-  <app-button [buttonText]="'Crear cuenta'"  routerLink="/feed-page"></app-button>
+<div id="form-register-container">
+  <form [formGroup]="registerForm" id="form-register">
+    <label>Nombre</label>
+    <input formControlName="nombre"/>
+    <div *ngIf="registerForm.get('nombre')?.invalid && registerForm.get('nombre')?.touched">
+      Nombre es requerido.
+    </div>
+    
+    <label>Apellido</label>
+    <input formControlName="apellido"/>
+    <div *ngIf="registerForm.get('apellido')?.invalid && registerForm.get('apellido')?.touched">
+      Apellido es requerido.
+    </div>
+    
+    <label>Correo</label>
+    <input formControlName="correo"/>
+    <div *ngIf="registerForm.get('correo')?.invalid && registerForm.get('correo')?.touched">
+      Correo es requerido y debe ser válido.
+    </div>
+    
+    <label>Contraseña</label>
+    <input formControlName="contraseña" type="password"/>
+    <div *ngIf="registerForm.get('contraseña')?.invalid && registerForm.get('contraseña')?.touched">
+      Contraseña es requerida.
+    </div>
+    
+    <button routerLink="/feed-page" [disabled]="registerForm.invalid">Registrarse</button>
+  </form>
 </div>

@@ -1,4 +1,27 @@
-<div id="form-contact-container">
-  <input placeholder="Asunto" id="subject-input" />
-  <textarea placeholder="Cuentanos que necesitas" id="info-textArea"></textarea>
+<div id="form-contact-container" [formGroup]="contactForm">
+  <input formControlName="subject" placeholder="Asunto" id="subject-input" />
+
+  <div
+    *ngIf="
+      contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched
+    "
+  >
+    El asunto es obligatorio.
+  </div>
+
+  <textarea
+    formControlName="message"
+    placeholder="Cuéntanos qué necesitas"
+    id="info-textArea"
+  ></textarea>
+
+  <div
+    *ngIf="
+      contactForm.get('message')?.invalid && contactForm.get('message')?.touched
+    "
+  >
+    El mensaje es obligatorio.
+  </div>
+
+  <button id="form-button" (click)="onSubmit()">Enviar</button>
 </div>

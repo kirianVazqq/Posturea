@@ -1,6 +1,7 @@
-body{
+body {
     background-color: #EDE6E6;
 }
+
 #image-container {
     display: flex;
     justify-content: center;
@@ -44,25 +45,25 @@ body{
 }
 
 #search-bar-container input {
-  
+
     border: none;
     background: 0;
     width: 100%;
     height: 100%;
     font-size: 24px;
- 
+
 }
 
-#images-search-cointainer {
-    margin-top:100px ;
+.images-search-container {
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 70px;
-    
+
 }
 
-#images-search-cointainer img {
+.images-search-container img {
     width: 160px;
     height: 160px;
     margin: 5px;

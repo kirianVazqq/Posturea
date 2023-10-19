@@ -2,21 +2,24 @@
 <div id="image-container">
   <img src="../../assets/img/posturea-no-text.png" />
 </div>
-<div id="register-form-container">
-  <div class="register-form-element">
-    <app-form-field [labelText]="'Correo'"></app-form-field>
-  </div>
-  <div class="register-form-element">
-    <app-form-field [labelText]="'Contraseña'"></app-form-field>
-  </div>
-  <div id="checkbox-container">
-    <input type="checkbox" />
-    <p>Recuerdame</p>
-  </div>
-</div>
-<div id="button-container">
-  <app-button
-    [buttonText]="'Crear cuenta'"
-    routerLink="/feed-page"
-  ></app-button>
+<div id="form-login-container">
+  <form [formGroup]="loginForm" id="form-login">
+    <label>Correo</label>
+    <input formControlName="email"/>
+    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+      El correo es requerido y debe ser valido.
+    </div>
+    <label>Contraseña</label>
+    <input type="password" formControlName="password"/>
+    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+      La contraseña es requerida
+    </div>
+    <div id="remember-container">
+      <input type="checkbox" />
+      <label>Recuerdame</label>
+    </div>
+    <button routerLink="/feed-page" [disabled]="loginForm.invalid">Inicia sesión</button>
+  </form>
+
+
 </div>

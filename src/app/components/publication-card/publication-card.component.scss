@@ -6,6 +6,7 @@
 #card-container span{
     font-weight: bold;
     font-size: 20px;
+ 
 }
 // P
 #card-container p{
@@ -26,6 +27,7 @@
 }
 
 #icons-container img {
+    margin-top:8px;
     width: 22px;
     height: 22px;
 
@@ -38,10 +40,11 @@
 }
 #user-name-message-container{
     display: flex;
+    margin-left: 5px;
 }
 
 #comments-title-container{
-
+    margin-left: 5px;
 }
 
 #users-comments-container{

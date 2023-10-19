@@ -1,0 +1,13 @@
+.user-images-container{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.user-images-container img{
+    width: 120px;
+    height: 120px;  
+    margin: 5px;
+
+}

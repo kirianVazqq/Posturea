@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-settings',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./settings.component.scss']
 })
 export class SettingsComponent {
+  constructor(public themeService: ThemeService) {}
 
+  switchTheme(): void {
+    this.themeService.toggleDarkMode();
+  }
 }

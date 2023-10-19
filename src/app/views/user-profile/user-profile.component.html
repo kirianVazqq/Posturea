@@ -1,2 +1,8 @@
 <app-user-profile-card></app-user-profile-card>
+
+  <div class="user-images-container">
+    <div *ngFor="let b of filterProducts()">
+      <img src="../../../assets/img/{{ b.imgSrc }}" />
+    </div>
+  </div>
 <app-navigation-bar></app-navigation-bar>

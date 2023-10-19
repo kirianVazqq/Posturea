@@ -1,68 +1,69 @@
-
-#image-container {
-    display:flex;
-    justify-content: center;
-   align-items: center;
-    width: 350px;
-    height: 250px;
-    margin:0 auto;
+body {
+    background-color: #EDE6E6;
 }
 
-#image-container img {
+#title-container {
+    display: flex;
+    justify-content: center;
+}
+
+#title-container h1 {
+
+    font-size: 40px;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+img {
     width: 350px;
     height: 370px;
     object-fit: cover;
 }
-#title-container {
+
+#form-login {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:10%;
 }
 
-#title-container h1 {
-    height: 41px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Arimo;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#register-form-container {
-    width: fit-content;
-    height: fit-content;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-#register-form-container .register-form-element {
-    align-items: center;
-
-}
-
-.register-form-element {
-    margin-bottom: 5px;
-}
-
-
-#button-container {
-    margin-top: 50px;
-
-
-
-}
-#checkbox-container{
-    display: flex;
-}
-#checkbox-container input{
-    margin-right:10px;
-   
- 
-}
-#checkbox-container p {
+#form-login input {
+    border: none;
+    border-bottom: 2px solid;
     font-size: 22px;
-   
- 
+    background-color: #EDE6E6;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+#form-login label {
+    font-size: 24px;
+}
+
+#form-login button {
+
+    cursor: pointer;
+    display: flex;             
+    justify-content: center;    
+    align-items: center;     
+    width: 330px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 199, 199, 0.70);
+    background: rgba(170, 170, 170, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    margin-top: 30%;
+}
+
+#remember-container label{
+    margin-left: 15px;
 }

@@ -1,6 +1,46 @@
-body{
-    background-color: #EDE6E6;
+body {
+  background-color: #EDE6E6;
 }
-#feed-page-card{
-    margin-bottom: 70px;
+
+#feed-page-card {
+  margin-bottom: 70px;
+}
+
+.carousel-container {
+  background-color: #D9D9D9;
+ 
+  position: relative;
+  height: 200px;
+  width: 100%;
+  max-width: 600px; // o el tamaño que prefieras
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  img {
+
+    border-radius: 20%;
+    height: 200px;
+    width: 100%;
+    display: none;
+    object-fit: cover;
+  }
+
+  button {
+    opacity: 70%;
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
 }

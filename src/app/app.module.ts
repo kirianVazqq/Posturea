@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
@@ -18,6 +17,9 @@ import { LoginComponent } from './views/login/login.component';
 import { CameraComponent } from './views/camera/camera.component';
 import { UserProfileCardComponent } from './components/user-profile-card/user-profile-card.component';
 import { UserProfileComponent } from './views/user-profile/user-profile.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { UserProfileComponent } from './views/user-profile/user-profile.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+     ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

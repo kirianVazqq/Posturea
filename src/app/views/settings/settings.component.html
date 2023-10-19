@@ -7,8 +7,16 @@
   </div>
   <div id="settings-options-container">
     <a  routerLink="/form-contact-page">Formulario de contacto</a>
-    <a>Modo oscuro</a>
     <a  routerLink="/start">Cerrar sesión</a>
+    <!-- <button id="theme-mode-button" (click)="switchTheme()">
+       {{ themeService.isDarkModeEnabled() ? 'Modo Claro' : 'Modo Oscuro' }}
+    </button> -->
+    <div id="theme-mode-button-container">
+    <a id="theme-mode-button" (click)="switchTheme()">
+      <img src="../../../assets/img/{{ themeService.isDarkModeEnabled() ? 'modo-claro.svg' : 'modo-oscuro.svg' }}"/>
+      
+   </a>
+  </div>
   </div>
   <app-navigation-bar></app-navigation-bar>
 </div>

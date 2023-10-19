@@ -1,5 +1,10 @@
+#user-profile-card-container {
+border-bottom: 1px solid;
+
+}
 #user-profile-card-container span{
     font-weight: bold;
+    
 }
 #user-image-container {
     display: flex;
@@ -10,6 +15,7 @@
     border-radius: 100px;
     border-style: solid;
 background-color:#D9D9D9;
+
 }
 
 #user-image-container img {
@@ -55,12 +61,4 @@ background-color:#D9D9D9;
     justify-content: center;
     align-items: center;
     margin: 5px;
-}
-#user-images-container{
-    margin-bottom: 70px;
-}
-#user-images-container img{
-    width: 120px;
-    height: 120px;  
-    object-fit: cover;
 }
